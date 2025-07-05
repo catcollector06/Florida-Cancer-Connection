@@ -103,9 +103,20 @@ main {
   margin: 0 auto;
 }
 
-@media(max-width: 500px) { /*provides control for small screens*/
-  main {
-    padding: 1rem;
+@media (max-width: 600px) {
+  .main-tabs {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 1rem;
+    overflow-x: auto;
+  }
+
+  .main-tabs a {
+    display: inline-block;
+    min-width: fit-content;
+    text-align: center;
+    word-break: break-word;
   }
 }
 
