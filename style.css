@@ -1,0 +1,642 @@
+/* Reset some basic styles */
+body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+  color: #222;
+  line-height: 1.5;
+}
+
+body {
+  background-color: #f9f9f9;
+  word-wrap: break-word;
+  overflow-x: hidden;
+} 
+
+/*  Header  */
+header {
+  background-color: #174e80;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Top nav bar (Home, Sources, About Us) */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #174e80;
+  padding: 12px 24px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.top-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+  white-space: nowrap;     /* prevent text wrapping inside tabs */
+  flex-shrink: 0;           /* keep tabs from squishing too small */
+}
+
+.top-links a:hover {
+  background-color: #3380c2;
+}
+
+/*  Main tabs */
+.main-tabs {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: center; /* line up neatly from the left */
+  background-color: #2468a2;
+  padding: 10px;
+  gap: 0.5rem; /* space between tabs */
+}
+
+.main-tabs a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+  white-space: nowrap; /* prevent text wrapping inside tabs */
+  flex-shrink: 0; /* keep tabs from squishing too small */
+}
+
+.main-tabs a:hover {
+  background-color: #3380c2;
+}
+
+/*  Main content  */
+main {
+  padding: 1rem 5vw;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media(max-width: 500px) { /*provides control for small screens*/
+  main {
+    padding: 1rem;
+  }
+}
+
+h2 {
+  color: #174e80;
+  margin-bottom: 0.5rem;
+}
+
+/*  Homepage Content Styling  */
+.hero {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background-color: #e6f2ff;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #174e80;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: 3174e80;
+}
+
+.mission {
+  padding: 2rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.mission ul {
+  margin: 1rem 0 1rem 1.5rem;
+  list-style-type: disc;
+}
+
+.mission li {
+  margin-bottom: 0.5rem;
+}
+
+.note {
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+/*  About Page Content Styling  */
+
+body.about-website main section {
+  margin-bottom: 2rem;
+}
+
+body.about-website main p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+body.about-website main ul {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+body.about-website main li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+body.about-website main em {
+  font-style: italic;
+}
+
+body.about-website main strong {
+  font-weight: bold;
+}
+
+/* Card-style boxes for each section */
+body.about-website main section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.about-website main h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*  Cancer Basics Page Content Styling  */
+
+body.cancer-basics main h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body.cancer-basics main section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.cancer-basics main p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+body.cancer-basics main ul {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+body.cancer-basics main li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+body.cancer-basics main h3 {
+  margin-top: 1.5rem;
+  color: #2468a2;
+  font-size: 1.25rem;
+}
+
+body.cancer-basics main em {
+  font-style: italic;
+}
+
+body.cancer-basics main strong {
+  font-weight: bold;
+}
+
+body.cancer-basics blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #174e80;
+  font-style: italic;
+  color: #222;
+}
+
+/*  Cancer Basics Sub-List Tweak (decrease margin size)  */
+body.cancer-basics main ul ul {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding-left: 1.2rem;
+  list-style-type: circle;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+body.cancer-basics main ul ul li {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Screening Page */
+body.screening main section {
+  margin-bottom: 2rem;
+}
+
+body.screening main p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+body.screening main em {
+  font-style: italic;
+}
+
+body.screening main strong {
+  font-weight: bold;
+}
+
+/* Card-style boxes for each section */
+
+body.screening .screening-map-figure {
+  text-align: center;
+  margin: 1rem auto 2rem auto;
+}
+
+body.screening .screening-map-figure img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body.screening .screening-map-figure figcaption {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.5rem;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+body.screening .screening-box section {
+  background-color: #ffffff; 
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+body.screening main h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body.screening main h3 {
+  margin-top: 1.5rem;
+  color: #2468a2;
+  font-size: 1.25rem;
+}
+
+/*Image styling*/
+body.screening .screening-map {
+  display: block;
+  margin: 1rem auto 2rem auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body.screening main a {
+  color: #2468a2;
+  text-decoration: underline;
+}
+
+body.screening main a:hover {
+  color: #3380c2;
+}
+
+/*Treatment Options Page*/
+body.treatment main h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body.treatment main section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.treatment main p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+body.treatment main h3 {
+  margin-top: 1.5rem;
+  color: #2468a2;
+  font-size: 1.25rem;
+}
+
+body.treatment main ul {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+body.treatment main li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+body.treatment .overview-box section {
+  background-color: #ffffff; 
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+body.treatment .side-effects-recovery section {
+  background-color: #ffffff; 
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+/*Managing Cancer Diagnosis Page*/
+/*White section boxes*/
+body.managing-diagnosis .diagnosis-box section {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+body.managing-diagnosis .diagnosis-box .diagnosis-text section {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+body.managing-diagnosis .text-box {
+  background-color: #ffffff; 
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+body.managing-diagnosis h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body.managing-diagnosis main section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.managing-diagnosis main p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+body.managing-diagnosis main h3 {
+  margin-top: 1.5rem;
+  color: #2468a2;
+  font-size: 1.25rem;
+}
+
+body.managing-diagnosis main ul {
+  margin: 1rem 0 1rem 1.5rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+body.managing-diagnosis main li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+body.managing-diagnosis main strong {
+  font-weight: bold;
+}
+
+body.managing-diagnosis blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #174e80;
+  font-style: italic;
+  color: #222;
+}
+
+body.managing-diagnosis main a {
+  color: #2468a2;
+  text-decoration: underline;
+}
+
+body.managing-diagnosis main a:hover {
+  color: #3380c2;
+}
+
+/*Organ Section*/
+body.organ-cancers main p, 
+body.organ-cancers li, 
+body.organ-cancers ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+body.organ-cancers h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+}
+
+body.organ-cancers h3 {
+  margin-top: 1.5rem;
+  color: #2468a2;
+  font-size: 1.25rem;
+}
+
+body.organ-cancers main section {
+  margin-bottom: 2rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body.organ-cancers main a {
+  color: #2468a2;
+  text-decoration: underline;
+}
+
+body.organ-cancers main a:hover {
+  color: #3380c2;
+}
+
+body.organ-cancers .organ-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+body.organ-cancers {
+  transform: none !important;
+  zoom: 1 !important;
+  font-size: 1rem !important;
+}
+
+body.organ-cancers main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body.organ-cancers section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body.organ-cancers .img-source {
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/*About us section*/
+
+body.about-us .text-box {
+  background-color: #ffffff; 
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+body.about-us h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+body.about-us main section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.about-us main p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+/*Sources*/
+body.sources .about-website-source, .cancer-basics-source, .treatment-sources, .organ-content-sources, .organ-img-sources {
+  background-color: #ffffff; 
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+}
+
+body.sources h1 {
+  margin: 0 0 2rem 0;
+  color: #174e80;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+body.sources main section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+body.sources main p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+body.sources main em {
+  font-style: italic;
+}
+
+body.sources main strong {
+  font-weight: bold;
+}
+
+body.sources main a {
+  color: #2468a2;
+  text-decoration: underline;
+}
+
+body.sources main a:hover {
+  color: #3380c2;
+}
