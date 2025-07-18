@@ -273,6 +273,28 @@ body.cancer-basics main ul ul li {
   line-height: 1.4;
 }
 
+body.cancer-basics .cell-cycle-img { /* style cell cycle img */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body.cancer-basics .img-source { /* style caption underneath img */
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #666;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+body.cancer-basics main a:hover {
+  color: #3380c2;
+}
+
 /* Screening Page */
 body.screening main section {
   margin-bottom: 2rem;
