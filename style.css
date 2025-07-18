@@ -131,13 +131,13 @@ h2 {
   font-size: 1.3rem;
   font-weight: 500;
   color: 3174e80;
+  text-align: center;
 }
 
 .mission {
   padding: 2rem 1rem;
   font-size: 1.05rem;
   line-height: 1.5;
-  text-align: center;
 }
 
 .mission ul {
@@ -150,7 +150,7 @@ h2 {
 }
 
 .home-body {
-  margin: 1rem 0 1rem 1.5rem;
+  margin: 0 0 1rem 1.5rem;
   font-size: 1.05rem;
   line-height: 1.5;
 }
