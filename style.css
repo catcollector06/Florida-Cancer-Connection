@@ -155,52 +155,6 @@ h2 {
   line-height: 1.5;
 }
 
-/*  About Page Content Styling  */
-
-body.about-website main section {
-  margin-bottom: 2rem;
-}
-
-body.about-website main p {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-}
-
-body.about-website main ul {
-  margin: 1rem 0 1rem 1.5rem;
-  padding-left: 1rem;
-  list-style-type: disc;
-}
-
-body.about-website main li {
-  margin-bottom: 0.5rem;
-  font-size: 1.05rem;
-}
-
-body.about-website main em {
-  font-style: italic;
-}
-
-body.about-website main strong {
-  font-weight: bold;
-}
-
-/* Card-style boxes for each section */
-body.about-website main section {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-body.about-website main h1 {
-  margin: 0 0 2rem 0;
-  color: #174e80;
-  font-size: 2rem;
-  text-align: center;
-}
-
 /*  Cancer Basics Page Content Styling  */
 
 body.cancer-basics main h1 {
@@ -623,6 +577,20 @@ body.about-us main p {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.05rem;
+}
+
+body.about-us .headshot {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto 2rem auto;
+}
+
+body.about-us .headshot img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /*Sources*/
