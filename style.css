@@ -400,12 +400,13 @@ body.managing-diagnosis .diagnosis-box section {
   margin-top: 1.5rem;
 }
 
+/*
 body.managing-diagnosis .diagnosis-box .diagnosis-text section {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 6px;
   margin-top: 1.5rem;
-}
+}*/
 
 body.managing-diagnosis .text-box {
   background-color: #ffffff; 
